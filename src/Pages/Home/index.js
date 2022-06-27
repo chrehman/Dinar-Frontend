@@ -11,6 +11,12 @@ import wall from '../../assets/wall.webp'
 import hand2 from '../../assets/hand2.webp'
 import locker from '../../assets/locker.webp'
 import keyboard from '../../assets/keyboard.webp'
+import space from '../../assets/space.webp'
+import gang from '../../assets/gang.webp'
+import badge from '../../assets/badge.webp'
+import Footer from '../../Components/Footer'
+
+
 
 
 const Home = () => {
@@ -55,11 +61,11 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className='py-20 border-b-2 border-white flex items-center px-10 bg-[#e2dcd5] flex-wrap'>
-                <div className='lg:w-1/2 md:w-1/2'>
+            <div className='py-20 border-b-2 border-white flex items-center justify-center px-10 bg-[#e2dcd5] flex-wrap'>
+                <div className='w-full lg:w-1/2 md:w-1/2'>
                     <img src={wall} alt="wall" />
                 </div>
-                <div className='w-full lg:w-1/2 md:w1/2 md:px-20 lg:px-20  '>
+                <div className='w-full lg:w-1/2 md:w-1/2 md:px-20 lg:px-20  '>
                     <h1 className=' font-bold text-2xl text-lblack font-courier tracking-widest'>What is Ethereum?</h1>
                     <p className=' text-lblack text-lg font-courier pt-2 pb-5  '>
                         Ethereum is a technology that's home to digital money, global payments, and applications. The community has built a booming digital economy, bold new ways for creators to earn online, and so much more. It's open to everyone, wherever you are in the world – all you need is the internet.
@@ -77,7 +83,7 @@ const Home = () => {
 
             <div className='py-20 border-b-2 border-white flex items-center justify-center flex-wrap px-10'>
 
-                <div className='lg:w-1/2 md:w-1/2 md:px-20 lg:px-20 '>
+                <div className='lg:w-1/2 md:w-1/2 md:px-10 lg:px-20 '>
                     <h1 className=' font-bold text-2xl text-lblack font-courier tracking-widest'>A fairer financial system</h1>
                     <p className=' text-lblack text-lg font-courier pt-2 pb-5  '>
                         Today, billions of people can’t open bank accounts, others have their payments blocked. Ethereum's decentralized finance (DeFi) system never sleeps or discriminates. With just an internet connection, you can send, receive, borrow, earn interest, and even stream funds anywhere in the world.
@@ -86,16 +92,16 @@ const Home = () => {
                         <Button text={"Explore Defi"} />
                     </div>
                 </div>
-                <div className='lg:w-1/2 md:w-1/2'>
+                <div className='w-full lg:w-1/2 md:w-1/2'>
                     <img src={hand2} alt="hand ethereum" />
                 </div>
             </div>
 
             <div className='py-20 border-b-2 border-white flex items-center justify-center flex-wrap px-10 bg-[#dbd1c5]'>
                 <div className='w-full lg:w-1/2 md:w-1/2'>
-                    <img src={locker} alt="locekr" />
+                    <img src={locker} alt="locker" />
                 </div>
-                <div className='lg:w-1/2 md:2-1/2 md:px-20 lg:px-20 '>
+                <div className='lg:w-1/2 md:w-1/2 md:px-20 lg:px-20 '>
                     <h1 className=' font-bold text-2xl text-lblack font-courier tracking-widest'>The internet of assets</h1>
                     <p className=' text-lblack text-lg font-courier pt-2 pb-5  '>
                         Ethereum isn't just for digital money. Anything you can own can be represented, traded and put to use as non-fungible tokens (NFTs). You can tokenise your art and get royalties automatically every time it's re-sold. Or use a token for something you own to take out a loan. The possibilities are growing all the time.
@@ -132,6 +138,35 @@ const Home = () => {
                     <img src={keyboard} alt="keyboard" />
                 </div>
             </div>
+            <h1 className=' font-bold text-2xl text-lblack font-courier tracking-widest ml-16 my-10'>Explore ethereum.org</h1>
+
+            <div className='flex  justify-center flex-wrap px-10'>
+                <div className='  w-full lg:w-[30%]  m-5'>
+                    <Card banner={space} title={"Level up your upgrade knowledge"} description={"The Ethereum roadmap consists of interconnected upgrades designed to make the network more scaleable, secure, and sustainable. "} />
+                </div>
+                <div className='  w-full lg:w-[30%]   m-5'>
+                    <Card banner={locker} title={"Ethereum for Enterprise"} description={"See how Ethereum can open up new business models, reduce your costs and future-proof your business."} />
+                </div>
+                <div className=' w-full md:w-full lg:w-[30%]  m-5'>
+                    <Card banner={gang} title={"The Ethereum community"} description={"Ethereum is all about. It's made up of people from all different backgrounds and interests. "} />
+                </div>
+            </div>
+
+            <div className='flex items-center justify-center mx-16 flex-wrap-reverse md:flex-wrap-reverse sm:flex-wrap-reverse rounded-lg bg-[#e2dcd5]'>
+                <div className='w-full lg:w-1/2 lg:pl-28 pb-10 px-3 '>
+                    <h1 className=' font-bold text-2xl text-lblack font-courier break-normal'>Contribute to ethereum.org</h1>
+                    <p className=' text-lblack text-lg font-courier pt-5  '>
+                        This website is open source with hundreds of community contributors. You can propose edits to any of the content on this site, suggest awesome new features, or help us squash bugs.
+                    </p>
+                    <div className='w-32 md:w-52 lg:w-52 bg-red-100 mt-3'>
+                        <Button text={"Contribute"} />
+                    </div>
+                </div>
+                <div className='w-full md:w-1/2 lg:w-1/2 flex items-center justify-center  '>
+                    <img src={badge} alt="badge" className='h-[25rem]' />
+                </div>
+            </div>
+            <Footer/>
         </div>
     )
 }
