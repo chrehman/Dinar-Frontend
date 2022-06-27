@@ -22,7 +22,7 @@ import Footer from '../../Components/Footer'
 const Home = () => {
     return (
         <div className='bg-[#F6F1EB]' >
-            <img src={banner} alt="banner" className='h-[50vh] lg:h-[75vh] md:h-[65vh] w-full' />
+            <img src={banner} alt="banner" className='h-[50vh] lg:h-[70vh] md:h-[60vh] w-full' />
             <div className='px-[1rem] py-[2rem] lg:px-[20vw] lg:py-[2rem] md:px-[20vw] md:py-[2rem]'>
                 <h1 className='text-center font-bold text-4xl text-lblack font-courier tracking-widest'>Welcome to Ethereum</h1>
                 <p className='text-center text-lblack text-lg font-courier pt-5 pb-3'>
