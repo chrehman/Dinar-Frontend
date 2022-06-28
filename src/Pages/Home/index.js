@@ -24,7 +24,7 @@ const Home = () => {
         <div className='bg-[#F6F1EB]' >
             <img src={banner} alt="banner" className='h-[50vh] lg:h-[70vh] md:h-[60vh] w-full' />
             <div className='px-[1rem] py-[2rem] lg:px-[20vw] lg:py-[2rem] md:px-[20vw] md:py-[2rem]'>
-                <h1 className='text-center font-bold text-4xl text-lblack font-courier tracking-widest'>Welcome to Ethereum</h1>
+                <h1 className='text-center font-bold text-4xl text-lblack font-courier tracking-widest'>Welcome to Dinar</h1>
                 <p className='text-center text-lblack text-lg font-courier pt-5 pb-3'>
                     Ethereum is the community-run technology powering the cryptocurrency ether (ETH) and thousands of decentralized applications.
                 </p>
@@ -35,14 +35,13 @@ const Home = () => {
 
             <div className='flex items-center justify-center flex-wrap bg-[#e2dcd5] '>
                 <div className='px-8 mt-4 md:px-28 lg:px-28 lg:w-1/2 md:w-1/2 '>
-                    <h1 className=' font-bold text-2xl text-lblack font-courier tracking-widest'>Get Started</h1>
+                    <h1 className=' font-bold text-2xl text-lblack font-courier tracking-widest'>Mission</h1>
                     <p className=' text-lblack text-lg font-courier pt-5  '>
-                        ethereum.org is your portal into the world of Ethereum. The tech is new and ever-evolving  it helps to have a guide. Here's what we recommend you do if you want to dive in.
+                        Creating new decentralized platform, wealth and blockchain technology for 2 Billion Muslims.
                     </p>
                 </div>
                 <div className='w-full lg:w-1/2 md:w-1/2 '>
                     <img src={person} alt="person" className='' />
-
                 </div>
             </div>
 
@@ -166,7 +165,7 @@ const Home = () => {
                     <img src={badge} alt="badge" className='h-[25rem]' />
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </div>
     )
 }
